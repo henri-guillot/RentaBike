@@ -3,7 +3,7 @@ class Bike < ApplicationRecord
   has_many :bookings, dependent: :destroy
   has_many_attached :photos, dependent: :destroy
 
-  validates :name, :type, :address, :price_per_day, :description, presence: true
+  validates :name, :bike_type, :place, :price_per_day, :description, presence: true
   validates :name, uniqueness: true
   validates :name, length: { minimum: 2 }
   validates :description, length: { minimum: 5 }

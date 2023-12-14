@@ -41,8 +41,8 @@ luka.save
 
 velo_1 = Bike.new(
   user: luka,
-  name: "Moutain bike vert et noir"
-  type: "mountain",
+  name: "Moutain bike vert et noir",
+  bike_type: "mountain",
   place: "Paris 12",
   description: "Vélo de montagne tout suspendu à louer, idéal pour les sentiers accidentés. Performant et prêt à vous offrir une expérience de VTT inoubliable.",
   price_per_day: 12
@@ -56,8 +56,8 @@ velo_1.save
 
 velo_2 = Bike.new(
   user: luka,
-  name: "Vélo de ville"
-  type: "ville",
+  name: "Vélo de ville",
+  bike_type: "ville",
   place: "Paris 8",
   description: "Vélo urbain élégant disponible à la location. Parfait pour les déplacements en ville, léger et équipé d'accessoires pratiques.",
   price_per_day: 15
@@ -68,8 +68,8 @@ velo_2.save
 
 velo_3 = Bike.new(
   user: luka,
-  name: "Vélo électrique"
-  type: "électrique",
+  name: "Vélo électrique",
+  bike_type: "électrique",
   place: "Paris 10",
   description: "Vélo électrique haut de gamme à louer, offrant une assistance puissante pour des balades sans effort. Parfait pour explorer la ville ou la campagne.",
   price_per_day: 17
@@ -80,8 +80,8 @@ velo_3.save
 
 velo_4 = Bike.new(
   user: luka,
-  name: "Vélo de course de Jalabert"
-  type: "vélo de course",
+  name: "Vélo de course de Jalabert",
+  bike_type: "vélo de course",
   place: "Paris 6",
   description: "Vélo de course en carbone à louer, doté d'une géométrie aérodynamique. Idéal pour les passionnés de cyclisme à la recherche de vitesse et de performance.",
   price_per_day: 10
@@ -92,8 +92,8 @@ velo_4.save
 
 velo_5 = Bike.new(
   user: luka,
-  name: "Vélo pour les transports"
-  type: "pliable",
+  name: "Vélo pour les transports",
+  bike_type: "pliable",
   place: "Paris 20",
   description: "Vélo pliable pratique disponible à la location. Parfait pour les déplacements quotidiens, compact et facile à ranger dans les espaces restreints.",
   price_per_day: 16
@@ -104,8 +104,8 @@ velo_5.save
 
 velo_6 = Bike.new(
   user: luka,
-  name: "Vélo ancien"
-  type: "vintage",
+  name: "Vélo ancien",
+  bike_type: "vintage",
   place: "Paris 18",
   description: "Vélo vintage à louer, plein de charme rétro. Parfait pour une balade décontractée en ville, alliant style et confort.",
   price_per_day: 8
@@ -116,8 +116,8 @@ velo_6.save
 
 velo_7 = Bike.new(
   user: luka,
-  name: "Vélo professionnel de triathlon"
-  type: "mountain",
+  name: "Vélo professionnel de triathlon",
+  bike_type: "mountain",
   place: "Paris 2",
   description: "Vélo de triathlon à louer, équipé de composants haut de gamme. Prêt à vous accompagner dans vos défis sportifs avec efficacité.",
   price_per_day: 40
@@ -128,8 +128,8 @@ velo_7.save
 
 velo_8 = Bike.new(
   user: luka,
-  name: "Aquabike"
-  type: "aquatique",
+  name: "Aquabike",
+  bike_type: "aquatique",
   place: "Paris 1",
   description: "aquabike, pour remonter la Seine",
   price_per_day: 12
@@ -140,8 +140,8 @@ velo_8.save
 
 velo_9 = Bike.new(
   user: luka,
-  name: "Vélo d'appartement"
-  type: "indoor",
+  name: "Vélo d'appartement",
+  bike_type: "indoor",
   place: "Paris 16",
   description: "Un magnifique vélo d'appartement pour refaire son summer-body",
   price_per_day: 12
