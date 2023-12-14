@@ -11,9 +11,9 @@ require "open-uri"
 
 p "is detroying - #{Bike.all.count} bikes - #{User.all.count} users - #{Booking.all.count} bookings"
 Booking.destroy_all
-Bike.all.each do |bike|
-  bike.photo.purge
-end
+# Bike.all.each do |bike|
+#   bike.photo.purge
+# end
 User.destroy_all
 Bike.destroy_all
 
