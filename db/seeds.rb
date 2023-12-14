@@ -48,7 +48,7 @@ velo_1 = Bike.new(
   price_per_day: 12
 )
 file = URI.open("https://images.unsplash.com/photo-1572111504021-40abd3479ddb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBiaWtlfGVufDB8fDB8fHww")
-velo_1.photos.attach(io: file, filename: "velo_1.png", content_type: "image/jpg")
+velo_1.photo.attach(io: file, filename: "velo_1.png", content_type: "image/jpg")
 velo_1.save
 
 
@@ -63,7 +63,7 @@ velo_2 = Bike.new(
   price_per_day: 15
 )
 file = URI.open("https://images.unsplash.com/photo-1528537928510-66caf3a3bf91?q=80&w=2978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-velo_2.photos.attach(io: file, filename: "velo_2.png", content_type: "image/jpg")
+velo_2.photo.attach(io: file, filename: "velo_2.png", content_type: "image/jpg")
 velo_2.save
 
 velo_3 = Bike.new(
@@ -75,7 +75,7 @@ velo_3 = Bike.new(
   price_per_day: 17
 )
 file = URI.open("https://images.unsplash.com/photo-1620802051782-725fa33db067?q=80&w=2768&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-velo_3.photos.attach(io: file, filename: "velo_3.png", content_type: "image/jpg")
+velo_3.photo.attach(io: file, filename: "velo_3.png", content_type: "image/jpg")
 velo_3.save
 
 velo_4 = Bike.new(
@@ -87,7 +87,7 @@ velo_4 = Bike.new(
   price_per_day: 10
 )
 file = URI.open("https://images.unsplash.com/photo-1497515098781-e965764ab601?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmVsbyUyMGRlJTIwY291cnNlfGVufDB8fDB8fHww")
-velo_4.photos.attach(io: file, filename: "velo_4.png", content_type: "image/jpg")
+velo_4.photo.attach(io: file, filename: "velo_4.png", content_type: "image/jpg")
 velo_4.save
 
 velo_5 = Bike.new(
@@ -99,7 +99,7 @@ velo_5 = Bike.new(
   price_per_day: 16
 )
 file = URI.open("https://images.unsplash.com/photo-1660276412288-7f89179a997b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHZlbG8lMjBwbGlhYmxlfGVufDB8fDB8fHww")
-velo_5.photos.attach(io: file, filename: "velo_5.png", content_type: "image/jpg")
+velo_5.photo.attach(io: file, filename: "velo_5.png", content_type: "image/jpg")
 velo_5.save
 
 velo_6 = Bike.new(
@@ -111,7 +111,7 @@ velo_6 = Bike.new(
   price_per_day: 8
 )
 file = URI.open("https://images.unsplash.com/photo-1679363336771-ac19093981ee?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-velo_6.photos.attach(io: file, filename: "velo_6.png", content_type: "image/jpg")
+velo_6.photo.attach(io: file, filename: "velo_6.png", content_type: "image/jpg")
 velo_6.save
 
 velo_7 = Bike.new(
@@ -123,7 +123,7 @@ velo_7 = Bike.new(
   price_per_day: 40
 )
 file = URI.open("https://images.unsplash.com/photo-1600492110568-f9bf4835500a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHZlbG8lMjBkZSUyMGNvdXJzZXxlbnwwfHwwfHx8MA%3D%3D")
-velo_7.photos.attach(io: file, filename: "velo_7.png", content_type: "image/jpg")
+velo_7.photo.attach(io: file, filename: "velo_7.png", content_type: "image/jpg")
 velo_7.save
 
 velo_8 = Bike.new(
@@ -135,7 +135,7 @@ velo_8 = Bike.new(
   price_per_day: 12
 )
 file = URI.open("https://www.linecoaching.com/sites/linecoaching/files/styles/width_700/public/aquabike.jpg.webp?itok=3aGoyD1v")
-velo_8.photos.attach(io: file, filename: "velo_8.png", content_type: "image/jpg")
+velo_8.photo.attach(io: file, filename: "velo_8.png", content_type: "image/jpg")
 velo_8.save
 
 velo_9 = Bike.new(
@@ -147,7 +147,7 @@ velo_9 = Bike.new(
   price_per_day: 12
 )
 file = URI.open("https://media.gettyimages.com/id/1397342624/fr/photo/homme-%C3%A2g%C3%A9-utilisant-un-v%C3%A9lo-dappartement-%C3%A0-la-maison.webp?s=1024x1024&w=gi&k=20&c=T4fvcETTUkC_DM4-RKdEUKSfOLyuyxvqWYcfm8MSg3A=")
-velo_9.photos.attach(io: file, filename: "velo_9.png", content_type: "image/jpg")
+velo_9.photo.attach(io: file, filename: "velo_9.png", content_type: "image/jpg")
 velo_9.save
 
 p "created bikes number - #{Bike.all.count} / user number #{User.all.count} / booking number #{Booking.all.count} "
