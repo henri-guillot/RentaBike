@@ -1,50 +1,33 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-12">
-      <h1>Tous les vélos</h1>
+      <h1>Vélos à louer</h1>
     </div>
   </div>
 
   <div class="row">
-    <div class="col">
-        <p>All <%= Bike.count %> bikes.</p>
+    <div class="col-12">
+        <p> <%= Bike.count %> vélos à proximité</p>
     </div>
   </div>
 
   <div class="row">
     <% @bikes.each do |bike| %>
-      <div class="col-md-4">
-        <div class="bike-card">
-          <span><%= cl_image_tag bike.photo.key, height: 50, width: 50, crop: :fill %></span>
-          <div class="bike-card-content">
-            <div class="bike-card-title">
-              <h4><%= bike.name %></h4>
-            </div>
-            <div class="flex">
-              <div class="flex align-items-center">
+      <div class="col-6 py-3">
+        <div class="card-bike">
+          <%= cl_image_tag bike.photo.key %>
+          <div class="card-bike-infos">
+            <div>
+              <h2><%= bike.name %></h2>
+              <p><div class="flex align-items-center">
                 <i class="fas fa-location"></i>
                 <span><%= bike.place %></span>
-              </div>
-              <div class="flex align-items-center">
-                <i class="fa-solid fa-euro-sign"></i>
-                <span><%= bike.price_per_day %></span>
-              </div>
-              <div class="flex align-items-center">
-                <i class="fa-solid fa-person-biking"></i>
-                <span><%= bike.bike_type %></span>
-              </div>
+              </div></p>
             </div>
-          </div>
-          <div class="bike-card-actions">
-            <%= link_to "More info", bike_path(bike) %>
-            <%= link_to "Edit", edit_bike_path(bike), class: "ms-3" %>
-            <%= link_to "Remove", bike_path(bike),
-                data: { turbo_method: :delete, turbo_confirm: "Are you sure?" },
-                class: "ms-3"
-            %>
+            <h3 class="card-bike-pricing"><%= bike.price_per_day.to_i %> €</h3>
           </div>
         </div>
-      </div>
-    <% end %>
-  </div>
+        </div>
+      <% end %>
+    </div>
 </div>
